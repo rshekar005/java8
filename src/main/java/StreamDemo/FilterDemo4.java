@@ -13,7 +13,10 @@ public class FilterDemo4 {
 		product.add(new Product(3, "Laptop", 50000.00));
 		product.add(new Product(4, "Sanitizer", 3000.00));
 		product.add(new Product(5, "Mobile", 15000.00));
-		
+		List<Product> product2= new ArrayList<>();
+
+		System.out.println(product2.addAll(product));
+		System.out.println(product2.toString());
 		// We need to print the product based on the prizes
 		product.stream().filter(p -> p.getPrice() >= 3000).forEach(pr -> System.out.println(pr.getName()));
 		
