@@ -25,6 +25,7 @@ public class SeleniumExample {
 		}*/
 		
 		//Java 8
+		// Here Consumer<WebElement> --> Here WebElement is a parameter to consumer and returns nothing
 		elements.forEach(e -> System.out.println(e.getText()));
 		Consumer<WebElement> consumer = (e)->{
 			if(!(e.getText().isEmpty())) {

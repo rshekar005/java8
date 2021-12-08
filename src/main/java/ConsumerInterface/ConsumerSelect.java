@@ -52,6 +52,7 @@ public class ConsumerSelect {
 	}*/
 	
 	//Java 8
+	// Consumer<Select> --> Here Select is an parameter to a consumer and returns nothing.
 	private static void selectFromDropDown(Consumer<Select> consumer, WebElement element) {
 		consumer.accept(new Select(element));
 	}
