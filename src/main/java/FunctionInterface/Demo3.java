@@ -17,7 +17,7 @@ public class Demo3 {
 		/* It will execute like below first it will run 2*10 = 10. Then 10 will pass to f2 -> 20*20*20 */
 		System.out.println(f1.andThen(f2).apply(2));
 		
-		/* It will execute like below first it will run 2*2*2 = 8. Then 8 will pass to f1 -> 8*8. Reverse of andThen() */
+		/* It will execute like below first it will run 2*2*2 = 8. Then 8 will pass to f1 -> 8*10. Reverse of andThen() */
 		System.out.println(f1.compose(f2).apply(2));
 		
 	}
