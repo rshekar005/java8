@@ -20,8 +20,7 @@ public class Demo3 {
 		for(Object v: a){
 			System.out.println(v);
 		}
-		
-		
+
 	}
 
 }
